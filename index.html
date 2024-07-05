@@ -1,16 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Download File Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('change it to ur image path .png'); /* Change this to your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff; /* Ensures text is readable against the background */
+        }
+        .container {
+            margin-top: 10%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background for readability */
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+        .download-btn:hover {background-color: #3e8e41}
+        .download-btn:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        .description {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    </style>
 </head>
 <body>
-
-<!-- Download button -->
-<a href="BoudyCalculator.exe" download="BoudyCalculator.exe">
-  <button>Download File</button>
-</a>
-
+    <div class="container">
+        <h1>By Boudy</h1>
+        <p class="description">
+            Dive into the thrilling 2D world of "Swirly's Great Escape," an action-packed adventure game where you step into the shoes of Swirly, a quirky and resourceful hero with a knack for outsmarting his enemies. Set in the vibrant yet perilous city of Neonville, Swirly must navigate through treacherous streets, eerie alleyways, and secret underground tunnels to evade the clutches of sinister forces hot on his trail.
+        </p>
+        <a href="BoudyCalculator.exe" download="Swirly" class="download-btn">Download Calculator</a>
+    </div>
 </body>
 </html>
